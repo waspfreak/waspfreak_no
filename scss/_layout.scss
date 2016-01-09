@@ -13,6 +13,11 @@ h6,
   color: $withe;
 }
 
+h1,h2,h3,h4,h5,h6,{  font-weight: 500;}
+
+.col img {
+    width: 100%;
+}
 
 body {
   display: flex;
@@ -39,14 +44,18 @@ header {
     z-index: 1;
 }
 nav{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
+  height: 70px;
+  padding: 5px;
   & ul{
     & li{
       color: $indigo;
     }
     & li a{
       color: $indigo;
+      text-transform: uppercase;
+      font-weight: 500;
     }
   }
 }
@@ -66,18 +75,42 @@ nav{
     min-height: 100%;
     z-index: 0;
 }
+
+.section.no-pad-bot {
+    padding-top: 15vh;
+    position: absolute;
+    width: 100%;
+}
+
+
 .section-module{
   display: block;
   padding-top: 50px;
   color: $indigo;
     & h3{
+      font-size: 1.92rem;
       color: $orange;
+      margin: 0;
+    }
+    & h4{
+      font-size: 1.2em;
+      color: $indigo;
+      margin: 0;
     }
 }
-
+.project-full_width_module{
+  & h3{
+    text-align: center;
+  }
+}
 .full_width_grey_module {
     background-color: #edeeef;
     padding: 30px;
+    & h4{
+      font-size: 1.4em;
+      color: $orange;
+      margin: 0;
+    }
 }
 
 
@@ -98,6 +131,27 @@ footer.page-footer {
       transition: .2s ease-out;
       &:hover{ color: $indigo;}
     }
+}
+
+/*ICONS*/
+
+.icon{
+  color: $withe;
+  border-radius: 50%;
+  height: 8vh;
+  width: 8vh;
+  text-align: center;
+  margin-right: 2%;
+  & i{
+    font-size: 2.8em;
+    padding-top: 25%;
+  }
+}
+.i-bg-orange{
+  background-color: $orange
+}
+.i-bg-blue{
+  background-color: $indigo
 }
 
 
