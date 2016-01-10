@@ -582,9 +582,12 @@ nav {
   height: 80vh; }
   .parallax-container h1 {
     font-size: 3.4rem; }
+  .parallax-container a {
+    margin-top: 10%; }
 
 .parallax-container.second-parallax {
-  height: 40vh; }
+  height: 40vh;
+  margin-top: 50px; }
   .parallax-container.second-parallax .section {
     text-align: center; }
 

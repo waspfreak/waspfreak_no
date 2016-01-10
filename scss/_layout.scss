@@ -77,10 +77,14 @@ nav{
     & h1{
       font-size: 3.4rem;
     }
+    & a{
+      margin-top: 10%;
+    }
 }
 
 .parallax-container.second-parallax{
     height: 40vh;
+    margin-top: 50px;
     & .section{
       text-align: center;
     }
