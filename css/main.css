@@ -544,7 +544,7 @@ header .header_top {
   background: #213b4d;
   display: block;
   overflow: hidden;
-  padding: 5px 30px;
+  padding: 5px 0;
   width: 100%; }
   header .header_top .row {
     margin-bottom: 0px; }
@@ -567,8 +567,26 @@ nav {
     text-transform: uppercase;
     font-weight: 500; }
 
+#sidenav-overlay {
+  z-index: 0; }
+
+.header_social {
+  text-align: right; }
+  .header_social a {
+    color: #fff;
+    transition: .2s ease-out; }
+    .header_social a:hover {
+      color: #f66b00; }
+
 .parallax-container {
-  height: 650px; }
+  height: 80vh; }
+  .parallax-container h1 {
+    font-size: 3.4rem; }
+
+.parallax-container.second-parallax {
+  height: 40vh; }
+  .parallax-container.second-parallax .section {
+    text-align: center; }
 
 .home__overlay_pattern {
   background-image: url(../img/pattern.png);
@@ -583,7 +601,7 @@ nav {
   z-index: 0; }
 
 .section.no-pad-bot {
-  padding-top: 15vh;
+  padding-top: 25vh;
   position: absolute;
   width: 100%; }
 
@@ -625,7 +643,7 @@ footer.page-footer {
     color: #fff;
     transition: .2s ease-out; }
     .footer__icons a:hover {
-      color: #213b4d; }
+      color: #f66b00; }
 
 /*ICONS*/
 .icon {
@@ -645,6 +663,18 @@ footer.page-footer {
 .i-bg-blue {
   background-color: #213b4d; }
 
+@media (max-width: 480px) {
+  .parallax-container h1 {
+    font-size: 2.3em; }
+  .parallax-container h5 {
+    font-size: 1.5em; }
+
+  .parallax-container.second-parallax {
+    height: 45vh; }
+    .parallax-container.second-parallax h2 {
+      font-size: 2.3em; }
+    .parallax-container.second-parallax h3 {
+      font-size: 1.5em; } }
 /*>> 2. PRELOADER **/
 #prelaoder {
   position: fixed;
